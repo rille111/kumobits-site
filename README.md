@@ -2,7 +2,7 @@
 
 Static site for Kumobits AB. Plain HTML and one CSS file, no build step, no trackers, no third party assets.
 
-Status: revision 2 (AI specialist, About, confidentiality, GDPR privacy policy, Rickard's defaults applied). No placeholder strings remain; check with `grep -rn PLACEHOLDER .` before deploy.
+Status: revision 2 (AI specialist, About, confidentiality, GDPR privacy policy, Rickard's defaults applied). No placeholder strings remain; verify with a grep for the placeholder marker before deploy.
 Production target: Cloudflare Pages on Rickard's own account (deploy handled separately).
 
 Local preview: `python3 -m http.server 8787` in this folder.
