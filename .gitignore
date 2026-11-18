@@ -1,0 +1,4 @@
+.tunnel.log
+.server.log
+*.pid
+.env*
