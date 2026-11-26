@@ -1,0 +1,125 @@
+{
+ "categories": [
+  "Mobile Games",
+  "PC & VR Games",
+  "Mobile Apps",
+  "Desktop Apps",
+  "Web Apps"
+ ],
+ "products": [
+  {
+   "categories": [
+    "Mobile Games",
+    "PC & VR Games"
+   ],
+   "links": [
+    {
+     "label": "Play in your browser",
+     "url": "/games/play/neon-drift/"
+    },
+    {
+     "label": "Screenshots and details",
+     "url": "/games/neon-drift/"
+    }
+   ],
+   "name": "Neon Drift",
+   "platforms": [
+    "Browser on desktop",
+    "Browser on phones (touch)"
+   ],
+   "slug": "neon-drift",
+   "status": "live",
+   "status_label": "Live",
+   "what": "Synthwave 3D endless racer with ghost replays of your best run."
+  },
+  {
+   "categories": [
+    "Mobile Games",
+    "PC & VR Games"
+   ],
+   "links": [
+    {
+     "label": "Play in your browser",
+     "url": "/games/play/orbit-siege/"
+    },
+    {
+     "label": "Screenshots and details",
+     "url": "/games/orbit-siege/"
+    }
+   ],
+   "name": "Orbit Siege",
+   "platforms": [
+    "Browser on phones (dual touch sticks)",
+    "Browser on desktop (keyboard, mouse, gamepad)"
+   ],
+   "slug": "orbit-siege",
+   "status": "live",
+   "status_label": "Live",
+   "what": "Juicy twin stick space roguelite with couch co op, upgrades and boss waves."
+  },
+  {
+   "categories": [
+    "PC & VR Games"
+   ],
+   "links": [
+    {
+     "label": "Play the demo",
+     "url": "https://rille111.github.io/corp-por-vr-demo/"
+    },
+    {
+     "label": "Screenshots and details",
+     "url": "/games/corp-por-vr/"
+    }
+   ],
+   "name": "Corp Por VR",
+   "platforms": [
+    "Meta Quest 3 (Quest Browser, WebXR)",
+    "Desktop Chrome or Edge"
+   ],
+   "slug": "corp-por-vr",
+   "status": "live",
+   "status_label": "Live",
+   "what": "WebXR demo you can open in a Quest browser or on a computer."
+  },
+  {
+   "categories": [
+    "PC & VR Games"
+   ],
+   "links": [
+    {
+     "label": "Screenshots and details",
+     "url": "/games/hall-of-the-dragon/"
+    }
+   ],
+   "name": "Hall of the Dragon",
+   "platforms": [
+    "Meta Quest 3 (standalone)"
+   ],
+   "slug": "hall-of-the-dragon",
+   "status": "building",
+   "status_label": "Building",
+   "what": "Quest VR game: training hall plus the WoT character slice, hand tracking and power words in progress."
+  },
+  {
+   "categories": [
+    "PC & VR Games"
+   ],
+   "links": [
+    {
+     "label": "Screenshots and details",
+     "url": "/games/stockholm-sim/"
+    }
+   ],
+   "name": "Stockholm Sim",
+   "platforms": [
+    "Windows PC first",
+    "VR (OpenXR) planned",
+    "Phone controls planned"
+   ],
+   "slug": "stockholm-sim",
+   "status": "building",
+   "status_label": "Building",
+   "what": "Blocky open world of Stockholm from map data; PC, VR and phone controls."
+  }
+ ]
+}
