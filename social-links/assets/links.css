@@ -1,0 +1,51 @@
+/* shared dark premium language for /all and /prof (from /prof by Design Master) */
+:root{--ink:#0B0D12;--ink1:#12151D;--ink2:#3A3F4B;--ink3:#6B7180;--line:rgba(247,246,242,.08);--paper:#F7F6F2;--muted:#A9AEBA;--accent:#2F4BFF;--accent-on-ink:#8C9BFF}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--ink)}
+body{color:var(--paper);font-family:Inter,system-ui,sans-serif;font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased;
+  background:radial-gradient(900px 520px at 18% -10%,rgba(47,75,255,.22),transparent 60%),radial-gradient(700px 500px at 110% 110%,rgba(140,155,255,.09),transparent 60%),var(--ink)}
+.grid{position:fixed;inset:0;pointer-events:none;opacity:.9;z-index:0;
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
+  background-size:80px 80px;mask-image:radial-gradient(ellipse 80% 70% at 30% 20%,#000 30%,transparent 80%);-webkit-mask-image:radial-gradient(ellipse 80% 70% at 30% 20%,#000 30%,transparent 80%)}
+.page{position:relative;z-index:1}
+.top{display:flex;justify-content:space-between;align-items:center;font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.wordmark{font-family:"Inter Tight",sans-serif;font-weight:700;font-size:16px;letter-spacing:-.01em;text-transform:none;color:var(--paper);text-decoration:none}
+.top nav a{color:var(--muted);text-decoration:none;margin-left:18px;padding:6px 0}
+.top nav a:hover,.top nav a:focus-visible{color:var(--paper)}
+.eyebrow{font-family:"JetBrains Mono",monospace;font-size:clamp(10px,1.4vh,12px);letter-spacing:.12em;text-transform:uppercase;color:var(--accent-on-ink);display:flex;align-items:center;gap:10px}
+.eyebrow i{width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(47,75,255,.25);animation:pulse 2.4s ease-in-out infinite}
+footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px 12px;border-top:1px solid var(--line);font-family:"JetBrains Mono",monospace;font-size:clamp(10px,1.4vh,12px);color:var(--ink3)}
+footer a{color:var(--muted);text-decoration:none}
+footer a:hover,footer a:focus-visible{color:var(--paper)}
+/* link tiles: whole tile is the link, glow, shimmer, lift */
+.tile{position:relative;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:clamp(8px,1.2vw,14px);
+  padding:clamp(8px,1.6vh,18px) clamp(10px,1.2vw,18px);border-radius:14px;text-decoration:none;color:var(--paper);overflow:hidden;isolation:isolate;cursor:pointer;
+  background:linear-gradient(180deg,rgba(247,246,242,.055),rgba(247,246,242,.02));border:1px solid rgba(140,155,255,.22);
+  box-shadow:0 0 0 0 rgba(47,75,255,0),inset 0 1px 0 rgba(255,255,255,.04);
+  transition:border-color .25s,transform .25s,background .25s,box-shadow .25s;-webkit-tap-highlight-color:rgba(47,75,255,.25);
+  animation:in .7s cubic-bezier(.2,.7,.2,1) var(--d,0s) both}
+.tile::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background:linear-gradient(110deg,transparent 30%,rgba(140,155,255,.20) 46%,rgba(255,255,255,.12) 50%,transparent 64%);
+  transform:translateX(-120%);animation:shimmer 5.5s ease-in-out var(--d,0s) infinite}
+.tile:hover,.tile:focus-visible{border-color:rgba(140,155,255,.75);background:linear-gradient(180deg,rgba(47,75,255,.22),rgba(47,75,255,.06));
+  transform:translateY(-2px);box-shadow:0 0 0 1px rgba(140,155,255,.35),0 14px 40px -12px rgba(47,75,255,.75);outline:none}
+.tile:focus-visible{box-shadow:0 0 0 3px rgba(140,155,255,.7),0 14px 40px -12px rgba(47,75,255,.75)}
+.tile:active{transform:translateY(0) scale(.985);background:rgba(47,75,255,.28)}
+.tile .ico{width:clamp(28px,4.4vh,40px);height:clamp(28px,4.4vh,40px);border-radius:10px;display:grid;place-items:center;background:var(--ink1);border:1px solid var(--line);color:var(--paper);flex:none}
+.tile .ico svg{width:18px;height:18px}
+.tile .tx{min-width:0;display:flex;flex-direction:column}
+.tile .k{font-family:"JetBrains Mono",monospace;font-size:clamp(9px,1.2vh,11px);letter-spacing:.12em;text-transform:uppercase;color:var(--accent-on-ink)}
+.tile .t{font-family:"Inter Tight",sans-serif;font-weight:600;font-size:clamp(14px,min(1.5vw,2.4vh),18px);letter-spacing:-.01em;line-height:1.2}
+.tile .h{font-family:"JetBrains Mono",monospace;font-size:clamp(10px,1.5vh,12.5px);color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tile .arrow{color:var(--accent-on-ink);transition:transform .25s;align-self:start}
+.tile:hover .arrow,.tile:focus-visible .arrow{transform:translate(3px,-3px);color:#fff}
+.tile.hot{background:var(--accent);border-color:#5b72ff;animation:in .7s cubic-bezier(.2,.7,.2,1) var(--d,0s) both,glow 2.8s ease-in-out 1s infinite}
+.tile.hot .k,.tile.hot .h,.tile.hot .arrow{color:rgba(255,255,255,.88)}
+.tile.hot .ico{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.2)}
+.tile.hot:hover,.tile.hot:focus-visible{background:#3D58FF}
+.reveal{opacity:0;transform:translateY(8px);animation:in .7s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@keyframes shimmer{0%,62%{transform:translateX(-120%)}82%,100%{transform:translateX(120%)}}
+@keyframes glow{0%,100%{box-shadow:0 0 0 0 rgba(47,75,255,.0),0 10px 30px -14px rgba(47,75,255,.6)}50%{box-shadow:0 0 0 4px rgba(47,75,255,.22),0 14px 44px -10px rgba(47,75,255,.9)}}
+@keyframes pulse{50%{box-shadow:0 0 0 7px rgba(47,75,255,.08)}}
+@media (prefers-reduced-motion:reduce){.tile,.tile.hot,.reveal{animation:none!important;opacity:1;transform:none}.tile::before,.eyebrow i{animation:none!important}.tile,.tile .arrow,.portal{transition:none}}
