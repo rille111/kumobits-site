@@ -121,6 +121,7 @@ a.row:active{transform:translate(2px,2px)}
 #anvil{width:clamp(72px,12vh,120px);aspect-ratio:4/3;height:auto}
 @media (min-width:1000px){.wrap{justify-content:flex-start;padding-left:clamp(24px,6vw,110px)}.term{max-width:540px}}
 @media (max-width:999px){.wrap{align-items:flex-end}}
+@media (max-width:699px){.stats{display:none}.boot{display:none}}
 </style>
 <link rel="icon" href="/social-links/priv/favicon.ico" sizes="any"><link rel="icon" href="/social-links/priv/favicon.svg" type="image/svg+xml"><link rel="icon" href="/social-links/priv/favicon-32.png" sizes="32x32" type="image/png"><link rel="icon" href="/social-links/priv/favicon-16.png" sizes="16x16" type="image/png"><link rel="apple-touch-icon" href="/social-links/priv/apple-touch-icon.png"><link rel="manifest" href="/social-links/priv/site.webmanifest"></head>
 <body>
@@ -273,7 +274,7 @@ function layout(){
  const r=panel.getBoundingClientRect();
  let ax,ay;
  if(r.right<innerWidth*.72){ax=(r.right+innerWidth)/2;ay=innerHeight*.44;}
- else{ax=innerWidth*.5;ay=Math.max(r.top-6,innerHeight*.12);ay=Math.min(ay,innerHeight*.5);}
+ else{ax=innerWidth*.5;ay=Math.max(r.top-18,innerHeight*.12);ay=Math.min(ay,innerHeight*.5);}
  apex=[ax/innerWidth,1-ay/innerHeight];
 }
 function apexPx(){return [Math.round(apex[0]*W),Math.round((1-apex[1])*H)];}
@@ -354,7 +355,9 @@ function loop(now){
  frame(t);
 }
 addEventListener('resize',()=>{clearTimeout(layout.t);layout.t=setTimeout(()=>{layout();if(reduce)frame(800);},120);});
-layout();
+let lastTop=-1;function relayout(){const r=panel.getBoundingClientRect();if(Math.abs(r.top-lastTop)>1||r.right!==relayout.r){lastTop=r.top;relayout.r=r.right;layout();if(reduce)frame(800);}}
+addEventListener('load',relayout);if(document.fonts)document.fonts.ready.then(relayout);setInterval(relayout,700);
+layout();lastTop=panel.getBoundingClientRect().top;
 if(reduce){bolt=null;frame(800);}else{bolt=makeBolt();flash=.6;requestAnimationFrame(loop);}
 })();
 </script>
