@@ -120,6 +120,88 @@
    "status": "building",
    "status_label": "Building",
    "what": "Blocky open world of Stockholm from map data; PC, VR and phone controls."
+  },
+  {
+   "categories": [
+    "Mobile Apps",
+    "Desktop Apps"
+   ],
+   "links": [],
+   "name": "Kumobits apps",
+   "platforms": [
+    "Phone",
+    "Desktop",
+    "Samsung smart TV (Tizen)"
+   ],
+   "slug": "kumobits-apps",
+   "status": "building",
+   "status_label": "Building",
+   "what": "Kumobits apps for phone, desktop and smart TV, built from one Flutter codebase."
+  },
+  {
+   "categories": [
+    "Web Apps"
+   ],
+   "links": [],
+   "name": "Kumo Clear",
+   "platforms": [
+    "Chrome",
+    "Edge",
+    "Firefox",
+    "Store listings pending"
+   ],
+   "slug": "kumo-clear",
+   "status": "building",
+   "status_label": "Building",
+   "what": "Browser extension: blocks ads, popups and cookie banners (always reject)."
+  },
+  {
+   "categories": [
+    "Web Apps"
+   ],
+   "links": [],
+   "name": "Kumo Pilot",
+   "platforms": [
+    "Chrome",
+    "Edge",
+    "Firefox",
+    "Store listings pending"
+   ],
+   "slug": "kumo-pilot",
+   "status": "building",
+   "status_label": "Building",
+   "what": "Browser extension: side panel AI agent that plans, reads, clicks and types; confirms before buy, send, submit or delete."
+  },
+  {
+   "categories": [
+    "Web Apps"
+   ],
+   "links": [],
+   "name": "Kumo Seek",
+   "platforms": [
+    "Chrome",
+    "Edge",
+    "Firefox",
+    "Store listings pending"
+   ],
+   "slug": "kumo-seek",
+   "status": "building",
+   "status_label": "Building",
+   "what": "Browser extension: AI search for any website you choose (BM25, optional AI answer)."
+  },
+  {
+   "categories": [
+    "Web Apps"
+   ],
+   "links": [],
+   "name": "Kumobits AI Security Check",
+   "platforms": [
+    "Any modern web browser"
+   ],
+   "slug": "ai-security-check",
+   "status": "building",
+   "status_label": "Building",
+   "what": "Free local AI security checker that runs in the browser; no data leaves the page."
   }
  ]
 }
