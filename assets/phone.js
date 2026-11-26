@@ -1,0 +1,3 @@
+/* Phone reveal: shows the number as an image only after a click (component from /social-links/prof). Digits never in HTML or JS. */
+(()=>{const b=document.getElementById('ph'),v=document.getElementById('phv'),l=document.getElementById('phl');if(!b||!v||!l)return;
+b.addEventListener('click',()=>{if(v.hidden){if(!v.firstChild){const i=new Image();i.alt='Phone number';i.decoding='async';i.src=['/social-links','prof','i','c.webp'].join('/');v.appendChild(i);}v.hidden=false;l.textContent='Tap to hide';b.setAttribute('aria-expanded','true');}else{v.hidden=true;l.textContent='Show phone';b.setAttribute('aria-expanded','false');}});})();

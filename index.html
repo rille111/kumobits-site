@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; font-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
 <title>Kumobits AB · AI security research, agent systems and cloud, Stockholm</title>
 <meta name="description" content="Kumobits AB, Stockholm. AI security research, agent systems and cloud. Security consulting, secure development, code review and vulnerability remediation.">
@@ -12,6 +12,7 @@
 <meta property="og:type" content="website"><meta property="og:site_name" content="Kumobits"><meta property="og:title" content="Kumobits AB · AI security research, Stockholm">
 <meta property="og:description" content="AI security research, agent systems and cloud. Founded by Rickard Robin in Stockholm."><meta property="og:url" content="https://kumobits.com/">
 <meta property="og:image" content="https://kumobits.com/social-links/prof/og.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@kumobits">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/assets/fonts.css">
 <link rel="stylesheet" href="/style.css">
 </head>
@@ -31,13 +32,10 @@
 </div>
 </header>
 <main id="main" class="wrap">
-<section class="hero">
+<div class="layout">
+<div class="lhero"><section class="hero">
 <div class="split">
 <div class="reveal">
-<div class="orbit">
-<svg viewBox="0 0 112 112" aria-hidden="true"><circle cx="56" cy="56" r="47" fill="none" stroke="rgba(247,246,242,.12)"/><circle cx="56" cy="56" r="55" fill="none" stroke="rgba(140,155,255,.18)" stroke-dasharray="2 5"/><g class="spin"><circle cx="103" cy="56" r="3.5" fill="#2F4BFF"/><circle cx="103" cy="56" r="7" fill="rgba(47,75,255,.25)"/></g><g class="spin2"><circle cx="56" cy="1" r="2.2" fill="#8C9BFF"/></g></svg>
-<img src="/assets/portrait.jpg" width="320" height="320" alt="Portrait of Rickard Robin, founder of Kumobits AB">
-</div>
 <p class="eyebrow"><i aria-hidden="true"></i>Kumobits AB · Stockholm</p>
 <h1>Defensive security and secure engineering for the systems you own.</h1>
 <p class="lead">Kumobits AB is the consultancy of Rickard Robin, a senior software and cloud engineer and AI specialist with more than 25 years of professional experience. We deliver security consulting, secure development, code review and vulnerability remediation, always on systems the client owns or has authorized in writing.</p>
@@ -55,7 +53,45 @@
 </ul>
 </div>
 </div>
-</section>
+</section></div>
+<aside class="prof" aria-labelledby="pname">
+<div class="pcard">
+<div class="orbit">
+<svg viewBox="0 0 112 112" aria-hidden="true"><circle cx="56" cy="56" r="47" fill="none" stroke="rgba(247,246,242,.12)"/><circle cx="56" cy="56" r="55" fill="none" stroke="rgba(140,155,255,.18)" stroke-dasharray="2 5"/><g class="spin"><circle cx="103" cy="56" r="3.5" fill="#2F4BFF"/><circle cx="103" cy="56" r="7" fill="rgba(47,75,255,.25)"/></g><g class="spin2"><circle cx="56" cy="1" r="2.2" fill="#8C9BFF"/></g></svg>
+<img src="/assets/portrait.jpg" width="320" height="320" alt="Portrait of Rickard Robin">
+</div>
+<p class="eyebrow"><i aria-hidden="true"></i>AI security research</p>
+<h2 id="pname" class="pname">Rickard Robin</h2>
+<p class="plede">Security research on AI systems and the agents built on them. <strong>Founder of Kumobits AB</strong>, Stockholm.</p>
+<ul class="pillars" aria-label="Focus areas"><li>AI security</li><li>Agent systems</li><li>Cloud native</li><li>25 years in software</li></ul>
+<p class="label">Connect</p>
+<ul class="links">
+        <li><a class="lk primary" href="https://x.com/kumobits" target="_blank" rel="noopener me" aria-label="Kumobits on X, @kumobits, opens in a new tab">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.8 3h3.1l-6.8 7.8L22 21h-6.2l-4.9-6.4L5.3 21H2.2l7.3-8.3L2 3h6.4l4.4 5.8L17.8 3Zm-1.1 16.2h1.7L7.4 4.7H5.6l11.1 14.5Z"/></svg></span>
+          <span><span class="t">X</span><span class="h">@kumobits</span></span><span class="arrow" aria-hidden="true">↗</span></a></li>
+        <li><button type="button" class="lk phone" id="ph" aria-expanded="false" aria-controls="phv">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6.6 3.5h2.6l1.4 4.1-2 1.4a12 12 0 0 0 6.4 6.4l1.4-2 4.1 1.4v2.6a2 2 0 0 1-2.2 2A16.6 16.6 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2Z"/></svg></span>
+          <span><span class="t">Phone</span><span class="h" id="phl">Show phone</span><span id="phv" class="phv" hidden></span></span><span class="arrow" aria-hidden="true">+</span></button></li>
+        <li><a class="lk" href="https://www.linkedin.com/in/rickard-robin-1995b627/" target="_blank" rel="noopener me" aria-label="Rickard Robin on LinkedIn, opens in a new tab">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.5h4V21H3V9.5Zm7 0h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.2c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V21h-4V9.5Z"/></svg></span>
+          <span><span class="t">LinkedIn</span><span class="h">Rickard Robin</span></span><span class="arrow" aria-hidden="true">↗</span></a></li>
+        <li><a class="lk" href="https://github.com/rille111" target="_blank" rel="noopener me" aria-label="GitHub, rille111, opens in a new tab">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.5 9.5 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.3 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg></span>
+          <span><span class="t">GitHub</span><span class="h">rille111</span></span><span class="arrow" aria-hidden="true">↗</span></a></li>
+        <li><a class="lk" href="mailto:hello@kumobits.com" aria-label="Email Kumobits at hello@kumobits.com">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="m4 7 8 6 8-6"/></svg></span>
+          <span><span class="t">Email</span><span class="h">hello@kumobits.com</span></span><span class="arrow" aria-hidden="true">→</span></a></li>
+        <li><a class="lk" href="https://www.linkedin.com/company/kumobits-ab" target="_blank" rel="noopener me" aria-label="Kumobits AB on LinkedIn, opens in a new tab">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.5h4V21H3V9.5Zm7 0h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.2c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V21h-4V9.5Z"/></svg></span>
+          <span><span class="t">Kumobits AB on LinkedIn</span><span class="h">Company page</span></span><span class="arrow" aria-hidden="true">↗</span></a></li>
+        <li><a class="lk" href="https://github.com/kumobits" target="_blank" rel="noopener me" aria-label="Kumobits AB on GitHub, opens in a new tab">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.5 9.5 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.3 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg></span>
+          <span><span class="t">Kumobits AB on GitHub</span><span class="h">kumobits</span></span><span class="arrow" aria-hidden="true">↗</span></a></li>
+      </ul>
+<p class="pmore"><a href="/social-links/all/">All links</a> · <a href="/social-links/prof/">Profile page</a></p>
+</div>
+</aside>
+<div class="lrest">
 
 <section class="reveal d2">
 <p class="label">Services</p>
@@ -127,6 +163,8 @@
 <dt>Security reports</dt><dd><a href="/security/">Responsible disclosure</a></dd>
 </dl>
 </section>
+</div>
+</div>
 </main>
 <footer class="site">
 <div class="wrap">
@@ -134,5 +172,6 @@
 <p><a href="/products/">Products</a> · <a href="/games/">Games</a> · <a href="/social-links/all/">Links</a> · <a href="mailto:hello@kumobits.com">hello@kumobits.com</a> · <a href="/.well-known/security.txt">security.txt</a> · <a href="/privacy/">Privacy policy</a></p>
 </div>
 </footer>
+<script src="/assets/phone.js" defer></script>
 </body>
 </html>
