@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rickard Robin · Stormforge</title>
+<meta name="description" content="Rickard Robin, private links. Games, worlds and side quests from Stockholm.">
+<meta name="theme-color" content="#070b16">
+<link rel="canonical" href="https://www.kumobits.com/social-links/priv/">
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="Kumobits">
+<meta property="og:title" content="Rickard Robin · Stormforge">
+<meta property="og:description" content="Private links. Games, worlds and side quests from Stockholm.">
+<meta property="og:url" content="https://www.kumobits.com/social-links/priv/">
+<meta property="og:image" content="https://www.kumobits.com/social-links/priv/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@rille111">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8' shape-rendering='crispEdges'%3E%3Crect width='8' height='8' fill='%23070b16'/%3E%3Cpath fill='%23ffb347' d='M4 1h2v1H5v1h2v1H6v1H5v1H4v1H3V6h1V5H2V4h1V3h1z'/%3E%3C/svg%3E">
+<link href="/social-links/fonts/priv.css" rel="stylesheet">
+<style>
+:root{
+  --night:#070b16; --deep:#0c1530; --steel:#16244a; --blue:#2f6fe0; --sky:#5aa9ff; --ice:#bfe3ff;
+  --ember:#c2410c; --orange:#ff7a1a; --amber:#ffb347; --spark:#ffe08a;
+  --text:#e8f1ff; --dim:#9fb6dc; --todo:#f59e0b;
+  --px:4px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{min-height:100%;background:var(--night);color:var(--text)}
+body{font-family:"VT323",ui-monospace,monospace;font-size:22px;line-height:1.15;-webkit-font-smoothing:none;overflow-x:hidden}
+#sky{position:fixed;inset:0;width:100vw;height:100vh;image-rendering:pixelated;image-rendering:crisp-edges;z-index:0;display:block}
+.wrap{position:relative;z-index:1;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:32px 20px 44px}
+.term{width:100%;max-width:600px;background:rgba(7,11,22,.90);position:relative;
+  box-shadow:0 0 0 3px var(--night),0 0 0 6px var(--blue),0 0 0 9px var(--night),0 0 0 12px var(--orange),0 18px 0 12px rgba(0,0,0,.35)}
+.bar{display:flex;align-items:center;gap:10px;padding:6px 12px;background:var(--blue);color:var(--night);font-size:20px;letter-spacing:.5px}
+.bar .dots{display:flex;gap:6px}
+.bar .dots i{width:10px;height:10px;background:var(--night);display:block}
+.bar .dots i:first-child{background:var(--amber)}
+.bar .t{flex:1;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.body{padding:18px 18px 8px}
+.boot{color:var(--dim);font-size:19px;min-height:22px}
+.boot b{color:var(--amber);font-weight:400}
+.hero{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center;margin:14px 0 16px}
+#anvil{width:112px;height:84px;image-rendering:pixelated;display:block;
+  box-shadow:0 0 0 3px var(--steel);background:var(--deep)}
+h1{font-family:"Pixelify Sans",monospace;font-weight:700;font-size:40px;line-height:1;letter-spacing:1px;color:var(--amber);
+  text-shadow:3px 3px 0 var(--ember),6px 6px 0 #3a1406}
+.title2{font-family:"Pixelify Sans",monospace;font-weight:500;font-size:17px;color:var(--sky);letter-spacing:3px;margin-top:8px;text-transform:uppercase}
+.tag{color:var(--text);margin-top:8px;font-size:21px}
+.box{position:relative;margin:22px 0 12px;padding:16px 8px 8px;border:3px double var(--sky)}
+.box>.lab{position:absolute;top:-14px;left:14px;background:var(--night);padding:0 8px;color:var(--ice);font-size:20px;letter-spacing:1px}
+.box.forge{border-color:var(--orange)}
+.box.forge>.lab{color:var(--amber)}
+ul{list-style:none}
+a.row{display:grid;grid-template-columns:28px auto 1fr auto;align-items:center;gap:8px;padding:8px 8px;color:var(--text);text-decoration:none;font-size:23px;outline:none}
+a.row .k{color:var(--sky)}
+a.row .l{white-space:nowrap}
+a.row .fill{height:3px;background:repeating-linear-gradient(90deg,var(--steel) 0 3px,transparent 3px 8px);align-self:center;margin-top:4px}
+a.row .v{color:var(--dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:46vw}
+a.row:hover,a.row:focus-visible,a.row.sel{background:var(--orange);color:var(--night)}
+a.row:hover .k,a.row:focus-visible .k,a.row.sel .k,a.row:hover .v,a.row:focus-visible .v,a.row.sel .v{color:var(--night)}
+a.row:hover .fill,a.row:focus-visible .fill,a.row.sel .fill{background:repeating-linear-gradient(90deg,var(--night) 0 3px,transparent 3px 8px)}
+a.row:focus-visible{box-shadow:0 0 0 3px var(--spark)}
+li[data-todo]{display:none}
+.preview li[data-todo]{display:block}
+.preview li[data-todo] a.row{color:var(--todo);border:2px dashed var(--todo);pointer-events:none}
+.preview li[data-todo] .v{color:var(--todo)}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:6px 18px;color:var(--dim);font-size:19px;margin:6px 4px 2px}
+.meter{display:flex;gap:3px;margin-top:4px}
+.meter i{width:12px;height:10px;background:var(--steel)}
+.meter.b i.on{background:var(--sky)}
+.meter.o i.on{background:var(--orange)}
+.status{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:6px 12px;background:var(--steel);color:var(--ice);font-size:19px}
+.status kbd{font-family:inherit;background:var(--ice);color:var(--night);padding:0 5px;margin-right:4px}
+.cursor{display:inline-block;width:10px;height:18px;background:var(--amber);vertical-align:-2px;margin-left:4px;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media (max-width:420px){
+  body{font-size:20px}
+  h1{font-size:32px}
+  #anvil{width:84px;height:63px}
+  .body{padding:16px 12px 6px}
+  a.row{font-size:21px;grid-template-columns:24px auto 1fr auto;gap:6px;padding:8px 6px}
+  a.row .v{max-width:40vw}
+  .bar .t{font-size:18px}
+}
+@media (prefers-reduced-motion:reduce){.cursor{animation:none}}
+</style>
+</head>
+<body>
+<canvas id="sky" aria-hidden="true"></canvas>
+<main class="wrap">
+  <section class="term" aria-labelledby="who">
+    <div class="bar" aria-hidden="true"><span class="dots"><i></i><i></i><i></i></span><span class="t">STORMFORGE.EXE · rille111@stockholm</span><span>[x]</span></div>
+    <div class="body">
+      <p class="boot" aria-hidden="true">&gt; summoning storm <b>ok</b> · stoking forge <b>ok</b><span class="cursor"></span></p>
+      <header class="hero">
+        <canvas id="anvil" width="32" height="24" role="img" aria-label="Pixel art anvil with a glowing ingot"></canvas>
+        <div>
+          <h1 id="who">Rickard Robin</h1>
+          <p class="title2">Stormforge</p>
+          <p class="tag">Stockholm. Hardcore RPG gamer. Forging worlds after dark.</p>
+        </div>
+      </header>
+
+      <nav class="box" aria-label="Private links">
+        <span class="lab" aria-hidden="true">[ QUEST LOG ]</span>
+        <ul>
+          <li><a class="row" href="https://x.com/rille111" target="_blank" rel="noopener me" aria-label="X, @rille111, opens in a new tab"><span class="k" aria-hidden="true">01</span><span class="l">X</span><span class="fill" aria-hidden="true"></span><span class="v">@rille111</span></a></li>
+          <li><a class="row" href="https://www.youtube.com/channel/UCZO23b4WgqrvnpA-m29IhQA" target="_blank" rel="noopener me" aria-label="YouTube, Rickard Robin channel, opens in a new tab"><span class="k" aria-hidden="true">02</span><span class="l">YouTube</span><span class="fill" aria-hidden="true"></span><span class="v">Rickard Robin</span></a></li>
+          <li><a class="row" href="https://rille111.github.io/corp-por-vr-demo/" target="_blank" rel="noopener" aria-label="Ultima Online VR demo, play in the browser, opens in a new tab"><span class="k" aria-hidden="true">03</span><span class="l">UO VR demo</span><span class="fill" aria-hidden="true"></span><span class="v">Corp Por</span></a></li>
+        </ul>
+      </nav>
+
+      <nav class="box forge" aria-label="Other link pages">
+        <span class="lab" aria-hidden="true">[ PORTALS ]</span>
+        <ul>
+          <li><a class="row" href="/social-links/prof/" aria-label="Professional links page"><span class="k" aria-hidden="true">&gt;&gt;</span><span class="l">Professional</span><span class="fill" aria-hidden="true"></span><span class="v">/prof</span></a></li>
+          <li><a class="row" href="/social-links/all/" aria-label="All links page"><span class="k" aria-hidden="true">&gt;&gt;</span><span class="l">All links</span><span class="fill" aria-hidden="true"></span><span class="v">/all</span></a></li>
+        </ul>
+      </nav>
+
+      <div class="stats" aria-hidden="true">
+        <div>STORM<div class="meter b"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></div></div>
+        <div>FORGE<div class="meter o"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div></div>
+      </div>
+    </div>
+    <footer class="status"><span aria-hidden="true"><kbd>↑↓</kbd>move <kbd>⏎</kbd>open</span><span>kumobits.com</span></footer>
+  </section>
+</main>
+<script>
+(()=>{
+  if (/[?&]preview\b/.test(location.search)) document.documentElement.classList.add('preview');
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* keyboard menu: arrow keys move between links */
+  const rows=[...document.querySelectorAll('a.row')].filter(a=>a.offsetParent&&a.tabIndex!==-1);
+  document.addEventListener('keydown',e=>{
+    if(e.key!=='ArrowDown'&&e.key!=='ArrowUp')return;
+    const i=rows.indexOf(document.activeElement);
+    const n=e.key==='ArrowDown'?(i+1)%rows.length:(i<=0?rows.length-1:i-1);
+    rows[n].focus();e.preventDefault();
+  });
+
+  /* ---------- anvil sprite ---------- */
+  const A=document.getElementById('anvil').getContext('2d');
+  const P={'.':null,k:'#070b16',d:'#1d2a44',m:'#3b4e74',l:'#6d86b3',h:'#a9c0e6',r:'#c2410c',o:'#ff7a1a',a:'#ffb347',y:'#ffe08a'};
+  const anvil=[
+'................................',
+'................................',
+'................................',
+'................................',
+'................................',
+'............ayyyya..............',
+'...........roaaaaor.............',
+'...hhhhhhhhhhhhhhhhhhhhhhhh.....',
+'.lhhhhhhhhhhhhhhhhhhhhhhhhhl....',
+'..llllllllllllllllllllllllld....',
+'....mmmllllllllllllllllmmdd.....',
+'.......dmmmmmmmmmmmmmmmd........',
+'.........dmmmmmmmmmmmd..........',
+'..........dmmmmmmmmmd...........',
+'..........dmmmmmmmmmd...........',
+'.........dmmmmmmmmmmmd..........',
+'.......ddmmmmmmmmmmmmmdd........',
+'......dmmlllllllllllllmmd.......',
+'......dmmmmmmmmmmmmmmmmmd.......',
+'......ddddddddddddddddddd.......',
+'................................',
+'................................',
+'................................',
+'................................'];
+  let t0=performance.now();
+  function drawAnvil(t){
+    A.fillStyle='#0c1530';A.fillRect(0,0,32,24);
+    /* forge glow under */
+    for(let y=19;y<24;y++)for(let x=0;x<32;x++){const d=Math.abs(x-15)/16+ (23-y)/6; if(((x+y)&1)===0 && d<1) {A.fillStyle=d<.5?'#c2410c':'#3a1406';A.fillRect(x,y,1,1);} }
+    anvil.forEach((row,y)=>{for(let x=0;x<32;x++){const c=P[row[x]];if(c){A.fillStyle=c;A.fillRect(x,y,1,1);}}});
+    /* pulsing ingot */
+    const p=(Math.sin(t/300)+1)/2;
+    A.fillStyle=p>.5?'#ffe08a':'#ffb347';A.fillRect(13,5,4,1);
+    /* sparks */
+    if(!reduce){for(let i=0;i<4;i++){const s=((t/18+i*37)%60)/60;const x=14+Math.round(Math.sin(i*2.1+t/400)*6*s);const y=5-Math.round(s*6);if(y>=0){A.fillStyle=s<.5?'#ffe08a':'#ff7a1a';A.fillRect(x,y,1,1);}}}
+  }
+
+  /* ---------- storm sky ---------- */
+  const C=document.getElementById('sky'),G=C.getContext('2d');
+  let W,H,PX,cloudA,cloudB,drops=[],embers=[],bolt=null,flash=0,nextBolt=1500;
+  const bayer=[[0,8,2,10],[12,4,14,6],[3,11,1,9],[15,7,13,5]];
+  function hash(x,y){let h=x*374761393+y*668265263;h=(h^(h>>13))*1274126177;return ((h^(h>>16))>>>0)/4294967295;}
+  function noise(x,y){const xi=Math.floor(x),yi=Math.floor(y),xf=x-xi,yf=y-yi;const s=v=>v*v*(3-2*v);
+    const a=hash(xi,yi),b=hash(xi+1,yi),c=hash(xi,yi+1),d=hash(xi+1,yi+1);
+    return a+(b-a)*s(xf)+(c-a)*s(yf)+(a-b-c+d)*s(xf)*s(yf);}
+  function fbm(x,y){let v=0,a=.5,f=1;for(let i=0;i<4;i++){v+=a*noise(x*f,y*f);a*=.5;f*=2;}return v;}
+  function makeClouds(w,h,seed,scale,cover,tones){
+    const cv=document.createElement('canvas');cv.width=w;cv.height=h;const g=cv.getContext('2d');const im=g.createImageData(w,h);
+    const N=new Float32Array(w*h);
+    for(let y=0;y<h;y++)for(let x=0;x<w;x++){
+      const n1=fbm(x/scale+seed,y/scale),n2=fbm((x-w)/scale+seed,y/scale);const k=x/w;let n=n1*(1-k)+n2*k;
+      N[y*w+x]=n*(1-Math.pow(y/h,2))+(1-y/h)*0.12;}
+    const at=(x,y)=>y<0?1:y>=h?0:N[y*w+((x%w)+w)%w];
+    for(let y=0;y<h;y++)for(let x=0;x<w;x++){
+      const n=at(x,y),th=(bayer[y&3][x&3]/16-.5)*0.035;if(n<=cover+th)continue;
+      let ci=n>cover+0.16+th?2:n>cover+0.07+th?1:0;
+      if(at(x,y-2)<=cover&&at(x-1,y-3)<=cover)ci=3;        /* moonlit top rim */
+      else if(at(x,y+2)<=cover)ci=4;                        /* forge lit underside */
+      const c=tones[ci],i=(y*w+x)*4;im.data[i]=c[0];im.data[i+1]=c[1];im.data[i+2]=c[2];im.data[i+3]=255;}
+    g.putImageData(im,0,0);return cv;
+  }
+  const hex=h=>[1,3,5].map(i=>parseInt(h.slice(i,i+2),16));
+  function resize(){
+    PX=innerWidth<600?3:4;W=Math.ceil(innerWidth/PX);H=Math.ceil(innerHeight/PX);C.width=W;C.height=H;
+    const ch=Math.round(H*.55);
+    cloudA=makeClouds(W*2,ch,11.3,58,.33,['#1c2d58','#22376a','#2b4580','#6f93cf','#5a2f3c'].map(hex));
+    cloudB=makeClouds(W*2,Math.round(ch*.85),47.9,40,.30,['#101b3a','#132147','#172a56','#2f4b85','#3a2236'].map(hex));
+    drops=Array.from({length:Math.round(W*H/220)},()=>({x:Math.random()*W,y:Math.random()*H,v:2+Math.random()*2.5,l:2+Math.round(Math.random()*2)}));
+    embers=Array.from({length:Math.round(W/10)},()=>newEmber(true));
+    if(reduce)frame(0);
+  }
+  function newEmber(any){return {x:W*.5+(Math.random()-.5)*W*.55,y:any?H-Math.random()*H*.35:H-2,v:.25+Math.random()*.5,w:Math.random()*6.28,life:1};}
+  function mountains(){
+    /* back ridge, blue */
+    for(let x=0;x<W;x++){const h=H*.22+Math.sin(x*.045)*H*.035+Math.sin(x*.13+1)*H*.015+noise(x*.08,3)*H*.04;
+      G.fillStyle='#0d1630';G.fillRect(x,Math.round(H-h),1,Math.ceil(h));
+      G.fillStyle='#1a2a52';G.fillRect(x,Math.round(H-h),1,1);}
+    /* front ridge, near black with orange rim near the forge */
+    for(let x=0;x<W;x++){const h=H*.12+Math.sin(x*.03+2)*H*.03+noise(x*.12,9)*H*.035;const top=Math.round(H-h);
+      G.fillStyle='#060912';G.fillRect(x,top,1,Math.ceil(h));
+      const d=Math.abs(x-W*.5)/(W*.5);if(d<.6){G.fillStyle=d<.25?'#ff7a1a':'#c2410c';if(d<.45||((x&1)===0))G.fillRect(x,top,1,1);}}
+  }
+  function forgeGlow(t){
+    const cx=W*.5,cy=H+H*.02,R=Math.max(W*.42,H*.38);const fl=reduce?0:Math.sin(t/220)*.03+Math.sin(t/97)*.02;
+    const cols=['#ffb347','#ff7a1a','#c2410c','#5a1d08'];
+    for(let y=Math.floor(H-R*.9);y<H;y++)for(let x=Math.floor(cx-R);x<cx+R;x+=1){
+      const d=Math.hypot((x-cx)/R,(y-cy)/(R*.9))-fl;if(d>1)continue;
+      const lvl=d*4+bayer[y&3][x&3]/16-.5;const i=Math.min(3,Math.max(0,Math.floor(lvl)));
+      if(i===3&&((x+y)&1))continue;
+      G.globalAlpha=i===0?.55:i===1?.38:i===2?.25:.18;G.fillStyle=cols[i];G.fillRect(x,y,1,1);}
+    G.globalAlpha=1;
+  }
+  function makeBolt(){const pts=[];let x=W*(.15+Math.random()*.7),y=Math.round(H*.18);pts.push([x,y]);
+    while(y<H*.78){y+=2+Math.round(Math.random()*4);x+=Math.round((Math.random()-.5)*6);pts.push([x,y]);}
+    return {pts,life:1,branch:Math.floor(pts.length*(.3+Math.random()*.3))};}
+  function drawBolt(b){const col=b.life>.6?'#ffffff':'#bfe3ff';
+    for(let i=1;i<b.pts.length;i++){line(b.pts[i-1],b.pts[i],col);}
+    let [x,y]=b.pts[b.branch];for(let i=0;i<6;i++){const nx=x+2+Math.round(Math.random()*2),ny=y+3;line([x,y],[nx,ny],'#5aa9ff');x=nx;y=ny;}}
+  function line(a,b,c){G.fillStyle=c;let [x0,y0]=a.map(Math.round),[x1,y1]=b.map(Math.round);const dx=Math.abs(x1-x0),dy=-Math.abs(y1-y0),sx=x0<x1?1:-1,sy=y0<y1?1:-1;let e=dx+dy;
+    for(;;){G.fillRect(x0,y0,1,1);if(x0===x1&&y0===y1)break;const e2=2*e;if(e2>=dy){e+=dy;x0+=sx;}if(e2<=dx){e+=dx;y0+=sy;}}}
+  function sky(){
+    const bands=['#050812','#070b16','#0a1224','#0d1830','#111f3d','#15264a'];const bh=H/bands.length;
+    for(let y=0;y<H;y++){const f=y/bh;const i=Math.min(bands.length-1,Math.floor(f));const r=f-i;
+      for(let x=0;x<W;x+=1){const j=(r>bayer[y&3][x&3]/16&&i<bands.length-1)?i+1:i;G.fillStyle=bands[j];G.fillRect(x,y,1,1);}}
+  }
+  let skyCache=null;
+  function frame(t){
+    if(!skyCache||skyCache.width!==W||skyCache.height!==H){skyCache=document.createElement('canvas');skyCache.width=W;skyCache.height=H;const g0=G;sky();skyCache.getContext('2d').drawImage(C,0,0);}
+    G.drawImage(skyCache,0,0);
+    /* stars between clouds, faint */
+    const ox=reduce?0:Math.floor(t/60)%(W*2);const ox2=reduce?0:Math.floor(t/140)%(W*2);
+    G.drawImage(cloudB,-ox2,0);G.drawImage(cloudB,W*2-ox2,0);
+    G.drawImage(cloudA,-ox,0);G.drawImage(cloudA,W*2-ox,0);
+    if(flash>0){G.globalAlpha=flash*.35;G.fillStyle='#bfe3ff';G.fillRect(0,0,W,H*.6);G.globalAlpha=1;}
+    if(bolt&&bolt.life>0)drawBolt(bolt);
+    mountains();forgeGlow(t);
+    /* rain */
+    G.fillStyle='rgba(150,200,255,.45)';
+    for(const d of drops){for(let k=0;k<d.l;k++)G.fillRect(Math.round(d.x-k*.5),Math.round(d.y-k),1,1);
+      if(!reduce){d.y+=d.v;d.x+=d.v*.5*.5;if(d.y>H){d.y=-4;d.x=Math.random()*W*1.2-W*.1;}}}
+    /* embers */
+    for(const e of embers){G.fillStyle=e.life>.6?'#ffe08a':e.life>.3?'#ffb347':'#ff7a1a';G.fillRect(Math.round(e.x),Math.round(e.y),1,1);
+      if(!reduce){e.y-=e.v;e.x+=Math.sin(e.w+=.06)*.3;e.life-=.004;if(e.life<=0||e.y<H*.55)Object.assign(e,newEmber(false));}}
+  }
+  let last=0;
+  function loop(t){
+    requestAnimationFrame(loop);
+    if(t-last<50)return; /* about 20 fps, retro cadence */
+    last=t;
+    if(t>nextBolt){bolt=makeBolt();flash=1;nextBolt=t+3500+Math.random()*5000;}
+    if(bolt){bolt.life-=.12;if(bolt.life<=0)bolt=null;}
+    flash=Math.max(0,flash-.15);
+    if(bolt&&bolt.life>.3&&Math.random()<.3)flash=.8;
+    frame(t);drawAnvil(t);
+  }
+  addEventListener('resize',()=>{clearTimeout(resize.t);resize.t=setTimeout(resize,150);});
+  resize();
+  if(reduce){frame(0);drawAnvil(0);} else requestAnimationFrame(loop);
+})();
+</script>
+</body>
+</html>
