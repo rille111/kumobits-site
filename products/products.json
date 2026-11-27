@@ -1,61 +1,113 @@
 {
  "categories": [
-  "Mobile Games",
-  "PC & VR Games",
-  "Mobile Apps",
+  "SaaS",
+  "Web Apps",
   "Desktop Apps",
-  "Web Apps"
+  "Mobile Apps",
+  "PC & VR Games",
+  "Mobile Games"
  ],
  "products": [
   {
    "categories": [
-    "Mobile Games",
-    "PC & VR Games"
+    "SaaS"
    ],
    "links": [
     {
-     "label": "Play in your browser",
-     "url": "/games/play/neon-drift/"
-    },
-    {
-     "label": "Screenshots and details",
-     "url": "/games/neon-drift/"
+     "label": "Write to rickard@kumobits.com",
+     "url": "mailto:rickard@kumobits.com"
     }
    ],
-   "name": "Neon Drift",
+   "name": "Prospekto",
    "platforms": [
-    "Browser on desktop",
-    "Browser on phones (touch)"
+    "Web app, Swedish and English"
    ],
-   "slug": "neon-drift",
-   "status": "live",
-   "status_label": "Live",
-   "what": "Synthwave 3D endless racer with ghost replays of your best run."
+   "slug": "prospekto",
+   "status": "building",
+   "status_label": "Building",
+   "what": "Find named decision makers in Nordic B2B marketing and sales. Every record carries a source URL."
   },
   {
    "categories": [
-    "Mobile Games",
-    "PC & VR Games"
+    "Web Apps"
    ],
-   "links": [
-    {
-     "label": "Play in your browser",
-     "url": "/games/play/orbit-siege/"
-    },
-    {
-     "label": "Screenshots and details",
-     "url": "/games/orbit-siege/"
-    }
-   ],
-   "name": "Orbit Siege",
+   "links": [],
+   "name": "Kumo Clear",
    "platforms": [
-    "Browser on phones (dual touch sticks)",
-    "Browser on desktop (keyboard, mouse, gamepad)"
+    "Chrome",
+    "Edge",
+    "Firefox",
+    "Store listings pending"
    ],
-   "slug": "orbit-siege",
-   "status": "live",
-   "status_label": "Live",
-   "what": "Juicy twin stick space roguelite with couch co op, upgrades and boss waves."
+   "slug": "kumo-clear",
+   "status": "building",
+   "status_label": "Building",
+   "what": "Browser extension: blocks ads, popups and cookie banners (always reject)."
+  },
+  {
+   "categories": [
+    "Web Apps"
+   ],
+   "links": [],
+   "name": "Kumo Pilot",
+   "platforms": [
+    "Chrome",
+    "Edge",
+    "Firefox",
+    "Store listings pending"
+   ],
+   "slug": "kumo-pilot",
+   "status": "building",
+   "status_label": "Building",
+   "what": "Browser extension: side panel AI agent that plans, reads, clicks and types; confirms before buy, send, submit or delete."
+  },
+  {
+   "categories": [
+    "Web Apps"
+   ],
+   "links": [],
+   "name": "Kumo Seek",
+   "platforms": [
+    "Chrome",
+    "Edge",
+    "Firefox",
+    "Store listings pending"
+   ],
+   "slug": "kumo-seek",
+   "status": "building",
+   "status_label": "Building",
+   "what": "Browser extension: AI search for any website you choose (BM25, optional AI answer)."
+  },
+  {
+   "categories": [
+    "Web Apps"
+   ],
+   "links": [],
+   "name": "Kumobits AI Security Check",
+   "platforms": [
+    "Any modern web browser"
+   ],
+   "slug": "ai-security-check",
+   "status": "building",
+   "status_label": "Building",
+   "what": "Free local AI security checker that runs in the browser; no data leaves the page."
+  },
+  {
+   "categories": [
+    "Mobile Apps",
+    "Desktop Apps"
+   ],
+   "links": [],
+   "name": "Kumobits apps",
+   "platforms": [
+    "Phone",
+    "Desktop",
+    "Samsung smart TV (Tizen)"
+   ],
+   "slug": "kumobits-apps",
+   "status": "building",
+   "status_label": "Building",
+   "what": "Kumobits apps for phone, desktop and smart TV, built from one Flutter codebase."
   },
   {
    "categories": [
@@ -123,85 +175,53 @@
   },
   {
    "categories": [
-    "Mobile Apps",
-    "Desktop Apps"
+    "Mobile Games",
+    "PC & VR Games"
    ],
-   "links": [],
-   "name": "Kumobits apps",
+   "links": [
+    {
+     "label": "Play in your browser",
+     "url": "/games/play/neon-drift/"
+    },
+    {
+     "label": "Screenshots and details",
+     "url": "/games/neon-drift/"
+    }
+   ],
+   "name": "Neon Drift",
    "platforms": [
-    "Phone",
-    "Desktop",
-    "Samsung smart TV (Tizen)"
+    "Browser on desktop",
+    "Browser on phones (touch)"
    ],
-   "slug": "kumobits-apps",
-   "status": "building",
-   "status_label": "Building",
-   "what": "Kumobits apps for phone, desktop and smart TV, built from one Flutter codebase."
+   "slug": "neon-drift",
+   "status": "live",
+   "status_label": "Live",
+   "what": "Synthwave 3D endless racer with ghost replays of your best run."
   },
   {
    "categories": [
-    "Web Apps"
+    "Mobile Games",
+    "PC & VR Games"
    ],
-   "links": [],
-   "name": "Kumo Clear",
+   "links": [
+    {
+     "label": "Play in your browser",
+     "url": "/games/play/orbit-siege/"
+    },
+    {
+     "label": "Screenshots and details",
+     "url": "/games/orbit-siege/"
+    }
+   ],
+   "name": "Orbit Siege",
    "platforms": [
-    "Chrome",
-    "Edge",
-    "Firefox",
-    "Store listings pending"
+    "Browser on phones (dual touch sticks)",
+    "Browser on desktop (keyboard, mouse, gamepad)"
    ],
-   "slug": "kumo-clear",
-   "status": "building",
-   "status_label": "Building",
-   "what": "Browser extension: blocks ads, popups and cookie banners (always reject)."
-  },
-  {
-   "categories": [
-    "Web Apps"
-   ],
-   "links": [],
-   "name": "Kumo Pilot",
-   "platforms": [
-    "Chrome",
-    "Edge",
-    "Firefox",
-    "Store listings pending"
-   ],
-   "slug": "kumo-pilot",
-   "status": "building",
-   "status_label": "Building",
-   "what": "Browser extension: side panel AI agent that plans, reads, clicks and types; confirms before buy, send, submit or delete."
-  },
-  {
-   "categories": [
-    "Web Apps"
-   ],
-   "links": [],
-   "name": "Kumo Seek",
-   "platforms": [
-    "Chrome",
-    "Edge",
-    "Firefox",
-    "Store listings pending"
-   ],
-   "slug": "kumo-seek",
-   "status": "building",
-   "status_label": "Building",
-   "what": "Browser extension: AI search for any website you choose (BM25, optional AI answer)."
-  },
-  {
-   "categories": [
-    "Web Apps"
-   ],
-   "links": [],
-   "name": "Kumobits AI Security Check",
-   "platforms": [
-    "Any modern web browser"
-   ],
-   "slug": "ai-security-check",
-   "status": "building",
-   "status_label": "Building",
-   "what": "Free local AI security checker that runs in the browser; no data leaves the page."
+   "slug": "orbit-siege",
+   "status": "live",
+   "status_label": "Live",
+   "what": "Juicy twin stick space roguelite with couch co op, upgrades and boss waves."
   }
  ]
 }
