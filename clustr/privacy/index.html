@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>Clustr privacy policy</title>
+<style>
+  body { font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; max-width: 760px; margin: 40px auto; padding: 0 20px; color: #1f2328; background: #fff; }
+  h1 { font-size: 30px; } h2 { font-size: 20px; margin-top: 32px; }
+  code { background: #f3f5fb; padding: 1px 5px; border-radius: 4px; font-size: 14px; }
+  @media (prefers-color-scheme: dark) { body { background: #1b1d21; color: #e6e8eb; } code { background: #2a2e35; } }
+</style>
+</head>
+<body>
+<h1>Clustr privacy policy</h1>
+<p><em>Last updated: 27 November 2026</em></p>
+<p>Clustr ("the extension") is a Chrome extension by Kumobits that sorts your browser tabs into named, colored tab groups.</p>
+<h2>Summary</h2>
+<ul>
+<li><strong>Kumobits does not receive your data.</strong> Clustr has no server, no account, no analytics and no tracking.</li>
+<li>With no AI provider set up (the default), <strong>nothing leaves your browser</strong>.</li>
+<li>If you add your own AI provider, Clustr sends <strong>only tab titles and hostnames</strong> to <strong>that provider</strong>, and only when tabs are sorted.</li>
+</ul>
+<h2>What the extension reads</h2>
+<p>To group tabs, Clustr reads the <strong>title</strong> and <strong>URL</strong> of the tabs in the window you are sorting. Pinned tabs and non-web pages (such as <code>chrome://</code> pages) are skipped. Clustr does not read page content, cookies, form data, passwords or your browsing history.</p>
+<h2>What is stored, and where</h2>
+<p>Everything is stored locally in your browser (<code>chrome.storage.local</code>) and is never synced to your Google account:</p>
+<ul>
+<li>your settings;</li>
+<li>your API key, if you add one;</li>
+<li>the result of the last sort, shown in the popup;</li>
+<li>a small cache of which group each <strong>hostname</strong> was put in, so fewer AI calls are needed. Entries expire after 7 days by default. You can change that or clear the cache in Options.</li>
+</ul>
+<p>Removing the extension deletes all of this data.</p>
+<h2>What is sent, and to whom</h2>
+<p>Only if <strong>you</strong> pick an AI provider in Options and save your key or URL, Clustr sends the following each time tabs are sorted:</p>
+<ul>
+<li>a short tab number, the <strong>tab title</strong> (cut to 120 characters) and the <strong>hostname</strong> (for example <code>booking.com</code>) for each tab being sorted;</li>
+<li>the <strong>full URL</strong>, without login details or the <code>#</code> part, <strong>only if you turn on</strong> "Send full URLs" (off by default);</li>
+<li>the names of your existing groups, so they can be reused.</li>
+</ul>
+<p>This goes <strong>only</strong> to the provider endpoint you chose:</p>
+<ul>
+<li>Google Gemini (<code>generativelanguage.googleapis.com</code>),</li>
+<li>DeepSeek (<code>api.deepseek.com</code>),</li>
+<li>xAI (<code>api.x.ai</code>), or</li>
+<li>the OpenAI-compatible base URL you typed in, such as OpenRouter, Groq, or a local server on your own computer.</li>
+</ul>
+<p>Your API key is sent only to that same provider, to authenticate the request. That provider's own privacy policy and terms apply to what you send it. Kumobits is not a party to that exchange and never sees it.</p>
+<p>Clustr asks Chrome for access to a provider's website only when you turn that provider on, and you can withdraw access at any time at <code>chrome://extensions</code>.</p>
+<h2>What we never do</h2>
+<ul>
+<li>We never sell or share your data.</li>
+<li>We never send data to Kumobits or to anyone except the provider you chose.</li>
+<li>We never use your data for advertising, profiling, credit checks or anything other than grouping your tabs.</li>
+<li>We never load remote code.</li>
+</ul>
+<h2>Children</h2>
+<p>Clustr is a general productivity tool and is not directed at children.</p>
+<h2>Changes</h2>
+<p>If this policy changes, the new version will be published at this address with a new "Last updated" date.</p>
+<h2>Contact</h2>
+<p>Kumobits: privacy questions can be sent through the support contact on the Chrome Web Store listing.</p>
+</body>
+</html>
